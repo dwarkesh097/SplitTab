@@ -1,0 +1,151 @@
+import { StyleSheet } from 'react-native';
+import { Colors } from '../../../constants/colors';
+import { Spacing } from '../../../constants/spacing';
+import { Typography } from '../../../constants/typography';
+
+export const styles = StyleSheet.create({
+  screenContainer: { flex: 1, backgroundColor: Colors.background },
+  balanceCard: { margin: Spacing.lg },
+  cardTitle: {
+    fontSize: Typography.xl,
+    fontWeight: Typography.semiBold,
+    color: Colors.textPrimary,
+    marginBottom: Spacing.lg,
+  },
+  balanceRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    paddingVertical: Spacing.md,
+    borderBottomWidth: 1,
+    borderBottomColor: Colors.border,
+  },
+  balanceRowInfo: {
+    flex: 1,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginRight: Spacing.md,
+  },
+  balanceUserName: { fontSize: Typography.md, color: Colors.textSecondary },
+  balanceValue: { fontSize: Typography.lg, fontWeight: Typography.semiBold },
+  positiveText: { color: Colors.positive },
+  negativeText: { color: Colors.negative },
+  settledText: { color: Colors.textMuted, fontSize: Typography.md },
+  suggestionsCard: { marginHorizontal: Spacing.lg, marginBottom: Spacing.lg },
+  suggestionNoteText: {
+    fontSize: Typography.base,
+    color: Colors.textSecondary,
+    marginBottom: Spacing.md,
+  },
+  suggestionRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingVertical: Spacing.sm,
+    gap: Spacing.md,
+  },
+  suggestionText: {
+    fontSize: Typography.md,
+    color: Colors.textPrimary,
+    flex: 1,
+  },
+  myPaymentText: { color: Colors.negative, fontWeight: Typography.medium },
+  myReceivingText: { color: Colors.positive, fontWeight: Typography.medium },
+  historyCard: { marginHorizontal: Spacing.lg, marginBottom: Spacing.xxxl },
+  filterTabRow: {
+    flexDirection: 'row',
+    marginBottom: Spacing.lg,
+    gap: Spacing.sm,
+  },
+  filterTab: {
+    paddingHorizontal: Spacing.lg,
+    paddingVertical: Spacing.xs + 2,
+    borderRadius: 20,
+    backgroundColor: Colors.background,
+  },
+  filterTabActive: { backgroundColor: Colors.primary },
+  filterTabText: { fontSize: Typography.base, color: Colors.textPrimary },
+  filterTabTextActive: {
+    color: Colors.surface,
+    fontWeight: Typography.semiBold,
+  },
+  historyRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingVertical: Spacing.md,
+    borderBottomWidth: 1,
+    borderBottomColor: Colors.border,
+  },
+  historyIconCircle: {
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginRight: Spacing.md,
+  },
+  historyInfo: { flex: 1 },
+  historyTitleText: {
+    fontSize: Typography.md,
+    color: Colors.textPrimary,
+    marginBottom: 2,
+  },
+  historyDateText: { fontSize: Typography.xs + 2, color: Colors.textMuted },
+  historyAmountText: {
+    fontSize: Typography.md,
+    fontWeight: Typography.semiBold,
+  },
+  emptyHistoryContainer: {
+    alignItems: 'center',
+    paddingVertical: Spacing.section,
+  },
+  emptyHistoryText: { fontSize: Typography.md, color: Colors.textMuted },
+  modalOverlay: {
+    flex: 1,
+    justifyContent: 'center',
+    backgroundColor: Colors.overlayDark,
+  },
+  modalCard: {
+    backgroundColor: Colors.surface,
+    borderRadius: 12,
+    padding: Spacing.xl,
+    margin: Spacing.xl,
+  },
+  modalTitleText: {
+    fontSize: Typography.xxl,
+    fontWeight: Typography.bold,
+    color: Colors.textPrimary,
+    marginBottom: Spacing.sm,
+  },
+  modalSubtitleText: {
+    fontSize: Typography.md,
+    color: Colors.textSecondary,
+    marginBottom: Spacing.xl,
+  },
+  amountFieldLabel: {
+    fontSize: Typography.md,
+    fontWeight: Typography.medium,
+    color: Colors.textPrimary,
+    marginBottom: Spacing.sm,
+  },
+  amountDisplayBox: {
+    borderWidth: 1,
+    borderColor: Colors.border,
+    borderRadius: Spacing.sm,
+    padding: Spacing.lg,
+    backgroundColor: Colors.background,
+    alignItems: 'center',
+    marginBottom: Spacing.xl,
+  },
+  amountDisplayText: {
+    fontSize: Typography.xxxl,
+    fontWeight: Typography.bold,
+    color: Colors.primary,
+  },
+  modalButtonRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    gap: Spacing.md,
+  },
+  modalActionButton: { flex: 1 },
+});
